@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: green;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TraderFController">
+   <children>
+      <ImageView fitHeight="135.0" fitWidth="600.0">
+         <image>
+            <Image url="@../images/FreeOrFearful1.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER_RIGHT" layoutX="12.0" layoutY="145.0" prefHeight="25.0" prefWidth="86.0" text="Buy Currency" textFill="#fafaf7">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="229.0" layoutY="145.0" prefHeight="25.0" prefWidth="100.0" text="Sell Currency" textFill="#fafaf7">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="currencyList_B" layoutX="113.0" layoutY="145.0" onAction="#OnCurrencyList_B" prefHeight="25.0" prefWidth="100.0" promptText="Select" />
+      <ComboBox fx:id="currencyList_S" layoutX="339.0" layoutY="145.0" onAction="#OnCurrencyList_S" prefHeight="25.0" prefWidth="100.0" promptText="Select" />
+      <TextField fx:id="amount" layoutX="113.0" layoutY="176.0" prefHeight="25.0" prefWidth="130.0" />
+      <Label alignment="CENTER_RIGHT" layoutX="16.0" layoutY="171.0" prefHeight="25.0" prefWidth="78.0" text="Amount" textFill="#fafaf7">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="453.0" layoutY="145.0" prefHeight="25.0" prefWidth="58.0" text="FX Rate" textFill="#fafaf7">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fxRate" layoutX="524.0" layoutY="145.0" prefHeight="25.0" prefWidth="65.0" />
+      <Label alignment="CENTER_RIGHT" layoutX="243.0" layoutY="171.0" prefHeight="25.0" prefWidth="78.0" text="Payable" textFill="#fafaf7">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="NearestAmt" layoutX="336.0" layoutY="176.0" prefHeight="25.0" prefWidth="130.0" />
+      <Label alignment="CENTER_RIGHT" layoutX="19.0" layoutY="205.0" prefHeight="25.0" prefWidth="86.0" text="CounterParty" textFill="#fafaf7">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="275.0" layoutY="247.0" prefHeight="25.0" prefWidth="92.0" text="Trade Date" textFill="#fafaf7">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="1.0" layoutY="245.0" prefHeight="25.0" prefWidth="108.0" text="Settlement Date" textFill="#fafaf7">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="12.0" layoutY="290.0" prefHeight="25.0" prefWidth="92.0" text="Expiry Date" textFill="#fafaf7">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="12.0" layoutY="331.0" prefHeight="25.0" prefWidth="92.0" text="Trader's Name" textFill="#fafaf7">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="traderName" layoutX="113.0" layoutY="331.0" prefHeight="25.0" prefWidth="130.0" />
+      <Button fx:id="SaveAsNewButton" layoutX="253.0" layoutY="359.0" onAction="#OnSaveAsNew" prefHeight="25.0" prefWidth="119.0" text="SaveAsNew" />
+      <Button fx:id="SaveButton" layoutX="395.0" layoutY="359.0" onAction="#OnSaveClick" prefHeight="25.0" prefWidth="65.0" text="Save" />
+      <Label alignment="CENTER_RIGHT" layoutX="314.0" layoutY="315.0" prefHeight="25.0" prefWidth="65.0" text="Trade ID" textFill="#fafaf7">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tradingID" layoutX="389.0" layoutY="315.0" onAction="#onEnter" prefHeight="25.0" prefWidth="100.0" />
+      <DatePicker fx:id="expiryDate" layoutX="113.0" layoutY="290.0" onAction="#OnTradeSubmit" prefHeight="25.0" prefWidth="130.0" />
+      <DatePicker fx:id="settlementDate" layoutX="113.0" layoutY="247.0" onAction="#OnTradeSubmit" prefHeight="25.0" prefWidth="130.0" />
+      <DatePicker fx:id="tradeDate" layoutX="388.0" layoutY="245.0" onAction="#OnTradeSubmit" prefHeight="25.0" prefWidth="130.0" />
+      <ComboBox fx:id="counterPartyList" layoutX="113.0" layoutY="210.0" onAction="#OnSelectCounterParty" prefHeight="25.0" prefWidth="355.0" promptText="Select" />
+      <Button fx:id="cancelButton" layoutX="151.0" layoutY="359.0" onAction="#OnCancel" prefHeight="25.0" prefWidth="78.0" text="Cancel" />
+      <Label alignment="CENTER_RIGHT" layoutX="286.0" layoutY="278.0" prefHeight="25.0" prefWidth="86.0" text="Status" textFill="#fafaf7">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tradeStatus" layoutX="389.0" layoutY="278.0" onAction="#onSave" prefHeight="25.0" prefWidth="100.0" />
+      <Button fx:id="loadButton" layoutX="511.0" layoutY="315.0" onAction="#OnLoad" prefHeight="25.0" prefWidth="65.0" text="Load" />
+   </children>
+</AnchorPane>

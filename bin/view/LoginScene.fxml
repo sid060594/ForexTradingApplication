@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: green;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+   <children>
+      <ImageView fitHeight="139.0" fitWidth="600.0">
+         <image>
+            <Image url="@../images/FreeOrFearful1.jpg" />
+         </image>
+      </ImageView>
+      <Text id="welcome-text" fill="#c9c9c4" layoutX="181.0" layoutY="178.0" text="ForeX Trading" wrappingWidth="238.29296875">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <ImageView id="McLxp8Gbi.gif" fitHeight="163.0" fitWidth="151.0" layoutX="25.0" layoutY="192.0">
+         <image>
+            <Image url="@../images/forex-2.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="181.0" layoutY="200.0" prefHeight="34.0" prefWidth="169.0" text="Trader ID" textFill="#fafaf7">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="181.0" layoutY="234.0" prefHeight="34.0" prefWidth="169.0" text="Password" textFill="#fafaf7">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="437.0" layoutY="274.0" onAction="#OnManagerLogin" prefHeight="25.0" prefWidth="100.0" text="Manager Login" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="181.0" layoutY="308.0" prefHeight="34.0" prefWidth="184.0" text="Don't have an Trader ID?" textFill="#fafaf7">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="181.0" layoutY="342.0" prefHeight="34.0" prefWidth="184.0" text="Forgot Password?" textFill="#fafaf7">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="368.0" layoutY="312.0" mnemonicParsing="false" onAction="#onNewInvestorClick" prefHeight="26.0" prefWidth="169.0" text="Register New Trader" />
+      <Button layoutX="368.0" layoutY="346.0" mnemonicParsing="false" onAction="#handleRetrieveAccount" prefHeight="26.0" prefWidth="169.0" text="Send Password via Email" />
+      <Button layoutX="64.0" layoutY="357.0" mnemonicParsing="false" onAction="#OnAdminLogin" prefHeight="31.0" prefWidth="69.0" text="Admin" />
+      <PasswordField fx:id="InvPass" layoutX="365.0" layoutY="238.0" onAction="#OnInvLoginClick" prefHeight="26.0" prefWidth="169.0" />
+      <Button fx:id="InvestorLoginButton" layoutX="365.0" layoutY="274.0" onAction="#OnInvLoginClick" prefHeight="25.0" prefWidth="63.0" text="Login" />
+      <TextField fx:id="InvUser" layoutX="365.0" layoutY="205.0" onAction="#OnInvLoginClick" prefHeight="25.0" prefWidth="169.0" />
+   </children>
+</AnchorPane>

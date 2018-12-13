@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+  <children>
+    <GridPane alignment="CENTER" prefHeight="538.0" prefWidth="371.0" vgap="15.0">
+      <children>
+        <Text id="welcome-text" text="Forex Trading Apllication" wrappingWidth="251.619140625" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1">
+          <font>
+            <Font size="20.0" />
+          </font>
+        </Text>
+        <Label text="Email:" GridPane.halignment="RIGHT" GridPane.rowIndex="4" />
+        <TextField fx:id="InvUser" onAction="#OnInvLoginClick" prefHeight="19.3125" prefWidth="96.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin></TextField>
+        <Label text="Password:" GridPane.halignment="RIGHT" GridPane.rowIndex="7" />
+        <PasswordField fx:id="InvPass" onAction="#OnInvLoginClick" prefHeight="26.0" prefWidth="96.0" GridPane.columnIndex="1" GridPane.rowIndex="7">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin></PasswordField>
+        <Button fx:id="InvestorLoginButton" onAction="#OnInvLoginClick" prefHeight="0.0" prefWidth="72.0" text="Submit" GridPane.columnIndex="1" GridPane.rowIndex="11" GridPane.rowSpan="1">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin></Button>
+        <Label prefHeight="16.0" prefWidth="181.0" text="Don't have an account yet?" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+        <Button mnemonicParsing="false" onAction="#onNewInvestorClick" prefHeight="26.0" prefWidth="169.0" text="Create Account" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="14" />
+      <Label prefHeight="27.0" prefWidth="178.0" text="Forgot password?" GridPane.columnIndex="1" GridPane.rowIndex="16" />
+        <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="169.0" text="Send Password via Email" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="16" />
+        <ImageView id="bg.jpg" fitHeight="138.78662109375" fitWidth="128.0" smooth="false" GridPane.columnIndex="3" GridPane.rowIndex="5">
+               <image>
+                  <Image url="/view/bg.jpg" />
+               </image>
+        </ImageView>
+            <Button mnemonicParsing="false" onAction="#OnAdminLogin" prefHeight="31.0" prefWidth="69.0" text="Admin" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onAction="#OnManagerLogin" prefHeight="31.0" prefWidth="125.0" text="Manager Login" GridPane.columnIndex="3" GridPane.rowIndex="11" />
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="NEVER" maxWidth="117.0" minWidth="10.0" />
+        <ColumnConstraints hgrow="NEVER" minWidth="10.0" />
+        <ColumnConstraints hgrow="NEVER" maxWidth="138.0" minWidth="10.0" prefWidth="53.0" />
+        <ColumnConstraints hgrow="NEVER" minWidth="10.0" />
+            <ColumnConstraints hgrow="NEVER" minWidth="10.0" />
+      </columnConstraints>
+      <padding>
+        <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+      </padding>
+      <rowConstraints>
+        <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+        <RowConstraints maxHeight="31.0" minHeight="31.0" prefHeight="31.0" />
+        <RowConstraints maxHeight="49.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="49.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="49.0" minHeight="10.0" prefHeight="18.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="49.0" minHeight="10.0" prefHeight="18.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="49.0" minHeight="10.0" prefHeight="18.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="49.0" minHeight="10.0" prefHeight="18.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="49.0" minHeight="10.0" prefHeight="18.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="49.0" minHeight="10.0" prefHeight="18.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="49.0" minHeight="10.0" prefHeight="18.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="49.0" minHeight="10.0" prefHeight="18.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="49.0" minHeight="10.0" prefHeight="18.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="49.0" minHeight="10.0" prefHeight="18.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="49.0" minHeight="10.0" prefHeight="18.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="49.0" minHeight="10.0" prefHeight="18.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="49.0" minHeight="10.0" prefHeight="18.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="49.0" minHeight="10.0" prefHeight="18.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="49.0" minHeight="10.0" prefHeight="18.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="49.0" minHeight="10.0" prefHeight="18.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="49.0" minHeight="10.0" prefHeight="18.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="49.0" minHeight="10.0" prefHeight="18.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="49.0" minHeight="10.0" prefHeight="18.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="49.0" minHeight="10.0" prefHeight="18.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="49.0" minHeight="10.0" prefHeight="18.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="48.0" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="58.0" minHeight="10.0" prefHeight="22.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="58.0" minHeight="10.0" prefHeight="22.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="58.0" minHeight="0.0" prefHeight="20.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="67.0" prefHeight="19.0" />
+            <RowConstraints maxHeight="60.0" prefHeight="18.0" />
+            <RowConstraints maxHeight="43.0" minHeight="10.0" prefHeight="35.0" />
+            <RowConstraints maxHeight="43.0" minHeight="0.0" prefHeight="35.0" />
+            <RowConstraints maxHeight="57.0" minHeight="8.0" prefHeight="21.0" />
+      </rowConstraints>
+    </GridPane>
+  </children>
+</VBox>
