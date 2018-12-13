@@ -1,0 +1,2 @@
+# ForexTradingApplication
+JAVA Project
